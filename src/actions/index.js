@@ -21,3 +21,17 @@ export const VisibilityFilters = {
     SHOW_COMPLETED: 'SHOW_COMPLETED',
     SHOW_ACTIVE: 'SHOW_ACTIVE'
 };
+
+export const increment = count => {
+    return {
+        type: 'INCREMENT_COUNT',
+        count: ++count
+    };
+};
+
+export const decrement = count => {
+    return {
+        type: 'DECREMENT_COUNT',
+        count: --count
+    };
+};
